@@ -11,7 +11,7 @@ let enemiesInterval = 600;
 let frame = 0;
 let gameOver = false;
 let score = 0;
-const winningScore = 50;
+const winningScore = 500;
 
 const gameGrid = [];
 const defenders = [];
@@ -102,7 +102,6 @@ function handleProjectiles() {
 				projectiles.splice(i, 1);
 				i--;
 			}
-
 		}
 
 		if (projectiles[i] && projectiles[i].x > canvas.width - cellSize) {
